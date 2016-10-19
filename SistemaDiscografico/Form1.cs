@@ -51,7 +51,14 @@ namespace SistemaDiscografico
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            LlenarClase(UsuariosBll.Buscar(String(IdtextBox)));
+            LlenarUsuario(UsuariosBll.Buscar(String(IdtextBox.Text)));
+        }
+        private void LlenarUsuario(Usuarios usuario)
+        {
+            IdtextBox.Text = usuario.UsuarioId.ToString();
+            NombretextBox.Text = usuario.Nombre.ToString();
+            ContrasenatextBox.Text = usuario.Contrasena.ToString();
+
         }
 
         private void Nuevobutton_Click(object sender, EventArgs e)

@@ -45,9 +45,12 @@
             // 
             // Nuevobutton
             // 
-            this.Nuevobutton.Location = new System.Drawing.Point(15, 77);
+            this.Nuevobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
+            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Nuevobutton.Location = new System.Drawing.Point(15, 103);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(86, 37);
+            this.Nuevobutton.Size = new System.Drawing.Size(100, 50);
             this.Nuevobutton.TabIndex = 0;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.UseVisualStyleBackColor = true;
@@ -100,7 +103,7 @@
             // 
             this.NombretextBox.Location = new System.Drawing.Point(74, 25);
             this.NombretextBox.Name = "NombretextBox";
-            this.NombretextBox.Size = new System.Drawing.Size(140, 20);
+            this.NombretextBox.Size = new System.Drawing.Size(129, 20);
             this.NombretextBox.TabIndex = 6;
             // 
             // ContrasenatextBox
@@ -116,14 +119,17 @@
             this.ConfirmartextBox.Location = new System.Drawing.Point(386, 25);
             this.ConfirmartextBox.Name = "ConfirmartextBox";
             this.ConfirmartextBox.PasswordChar = '*';
-            this.ConfirmartextBox.Size = new System.Drawing.Size(146, 20);
+            this.ConfirmartextBox.Size = new System.Drawing.Size(133, 20);
             this.ConfirmartextBox.TabIndex = 8;
             // 
             // Guardarbutton
             // 
-            this.Guardarbutton.Location = new System.Drawing.Point(127, 77);
+            this.Guardarbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Guardarbutton.Location = new System.Drawing.Point(126, 103);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(87, 37);
+            this.Guardarbutton.Size = new System.Drawing.Size(114, 50);
             this.Guardarbutton.TabIndex = 9;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.UseVisualStyleBackColor = true;
@@ -131,25 +137,27 @@
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Eliminarbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(234, 77);
+            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Eliminarbutton.Location = new System.Drawing.Point(256, 103);
+            this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Eliminarbutton.Size = new System.Drawing.Size(83, 37);
-            this.Eliminarbutton.TabIndex = 10;
+            this.Eliminarbutton.Size = new System.Drawing.Size(115, 50);
+            this.Eliminarbutton.TabIndex = 29;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
-            this.Eliminarbutton.UseWaitCursor = true;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Buscarbutton
             // 
-            this.Buscarbutton.Location = new System.Drawing.Point(386, 77);
+            this.Buscarbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
+            this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscarbutton.Location = new System.Drawing.Point(386, 103);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(87, 37);
+            this.Buscarbutton.Size = new System.Drawing.Size(109, 50);
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
@@ -159,8 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(544, 139);
+            this.ClientSize = new System.Drawing.Size(544, 174);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
@@ -173,10 +180,9 @@
             this.Controls.Add(this.IdtextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nuevobutton);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Form1";
             this.Text = "Registro de Usuario";
-            this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
