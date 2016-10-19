@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.IdtextBox = new System.Windows.Forms.TextBox();
@@ -50,6 +51,7 @@
             this.Nuevobutton.TabIndex = 0;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // label1
             // 
@@ -98,7 +100,6 @@
             // 
             this.NombretextBox.Location = new System.Drawing.Point(74, 25);
             this.NombretextBox.Name = "NombretextBox";
-            this.NombretextBox.PasswordChar = '*';
             this.NombretextBox.Size = new System.Drawing.Size(140, 20);
             this.NombretextBox.TabIndex = 6;
             // 
@@ -130,12 +131,19 @@
             // 
             // Eliminarbutton
             // 
+            this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.Location = new System.Drawing.Point(234, 77);
             this.Eliminarbutton.Name = "Eliminarbutton";
+            this.Eliminarbutton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Eliminarbutton.Size = new System.Drawing.Size(83, 37);
             this.Eliminarbutton.TabIndex = 10;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.UseWaitCursor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Buscarbutton
             // 
@@ -145,11 +153,13 @@
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(544, 139);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
@@ -163,8 +173,10 @@
             this.Controls.Add(this.IdtextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nuevobutton);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Name = "Form1";
             this.Text = "Registro de Usuario";
+            this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

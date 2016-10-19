@@ -32,7 +32,30 @@ namespace SistemaDiscografico
             LlenarClase(usuario);
             UsuariosBll.Guardar(usuario);
 
-            MessageBox.Show("Exito al Guardar!!!")
+            MessageBox.Show("Exito al Guardar!!!");
+
+        }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+            UsuariosBll.Eliminar(String(IdtextBox.Text));
+            MessageBox.Show("Usuario Eliminado!!!");
+        }
+
+        public int String(string texto)
+        {
+            int numero = 0;
+            int.TryParse(texto, out numero);
+            return numero;
+        }
+
+        private void Buscarbutton_Click(object sender, EventArgs e)
+        {
+            LlenarClase(UsuariosBll.Buscar(String(IdtextBox)));
+        }
+
+        private void Nuevobutton_Click(object sender, EventArgs e)
+        {
 
         }
     }
