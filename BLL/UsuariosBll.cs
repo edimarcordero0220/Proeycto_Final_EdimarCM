@@ -10,7 +10,7 @@ namespace BLL
 {
     public class UsuariosBll
     {
-        public static void Insertar(Usuarios usuario)
+        public static void Guardar(Usuarios usuario)
         {
             
             try
