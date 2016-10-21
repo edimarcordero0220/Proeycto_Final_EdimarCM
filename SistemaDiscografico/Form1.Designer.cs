@@ -1,6 +1,6 @@
 ﻿namespace SistemaDiscografico
 {
-    partial class Form1
+    partial class RegistroUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUsuario));
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.IdtextBox = new System.Windows.Forms.TextBox();
@@ -50,7 +50,7 @@
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Nuevobutton.Location = new System.Drawing.Point(15, 103);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(100, 50);
+            this.Nuevobutton.Size = new System.Drawing.Size(100, 37);
             this.Nuevobutton.TabIndex = 0;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.UseVisualStyleBackColor = true;
@@ -64,6 +64,7 @@
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Id";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // IdtextBox
             // 
@@ -86,9 +87,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(231, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Contraña";
+            this.label3.Text = "Contraseña";
             // 
             // label4
             // 
@@ -129,7 +130,7 @@
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Guardarbutton.Location = new System.Drawing.Point(126, 103);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(114, 50);
+            this.Guardarbutton.Size = new System.Drawing.Size(114, 37);
             this.Guardarbutton.TabIndex = 9;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.UseVisualStyleBackColor = true;
@@ -144,7 +145,7 @@
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Eliminarbutton.Size = new System.Drawing.Size(115, 50);
+            this.Eliminarbutton.Size = new System.Drawing.Size(115, 37);
             this.Eliminarbutton.TabIndex = 29;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
@@ -157,17 +158,17 @@
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Buscarbutton.Location = new System.Drawing.Point(386, 103);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(109, 50);
+            this.Buscarbutton.Size = new System.Drawing.Size(109, 37);
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
-            // Form1
+            // RegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 174);
+            this.ClientSize = new System.Drawing.Size(544, 191);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
@@ -181,8 +182,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nuevobutton);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "RegistroUsuario";
             this.Text = "Registro de Usuario";
+            this.Load += new System.EventHandler(this.RegistroUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

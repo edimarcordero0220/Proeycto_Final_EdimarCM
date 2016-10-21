@@ -12,9 +12,9 @@ using BLL;
 
 namespace SistemaDiscografico
 {
-    public partial class Form1 : Form
+    public partial class RegistroUsuario : Form
     {
-        public Form1()
+        public RegistroUsuario()
         {
             InitializeComponent();
         }
@@ -62,6 +62,16 @@ namespace SistemaDiscografico
         }
 
         private void Nuevobutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegistroUsuario_Load(object sender, EventArgs e)
         {
 
         }

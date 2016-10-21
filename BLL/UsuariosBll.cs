@@ -57,6 +57,22 @@ namespace BLL
             }
         }
 
+        public static List<Usuarios> GetListarNombre (string tmp)
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+            RegistroDiscograficoDb db = new RegistroDiscograficoDb();
+            lista = db.Usuario.Where(p => p.Nombre == tmp).ToList();
+            return lista;
+
+        }
+        public static List<Usuarios> GetContrasena(string tmp)
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+            RegistroDiscograficoDb db = new RegistroDiscograficoDb();
+            lista = db.Usuario.Where(p => p.Contrasena == tmp).ToList();
+            return lista;
+        }
+
 
     }
 }
